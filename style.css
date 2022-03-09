@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }  
+
+  a:visited{
+    color: inherit;
+  }
+
+  :root{
+    --dark: #14110F;
+    --dark-gray: #34312D;
+    --dark-gray-shadow:#4d4438;
+    --light-gray: #7E7F83;
+    --orange: #D87D4A;
+    --dark-yellow:#DEB841;
+    --beige: #D9C5B2;
+    --light-beige: #FEE1C7;
+    --light: #F3F3F4;
+
+    --logo-font: 'Alfa Slab One', cursive;
+    --text-font: 'Exo 2', sans-serif;
+    --title-font: 'Nunito', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .container{ 
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+  #header{
+    background-color: var(--dark-gray);
+    box-shadow: inset 0px 0px 13px -1px var(--dark-gray-shadow);
+    display: flex;
+    width: 100%;
+        
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    border-bottom: 2px solid var(--orange);
+  }
+
+  .logo{
+    font-family: var(--logo-font);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+        
+    position: relative;
+  }
+
+  .logo:hover{
+    text-shadow: var(--beige) 1px 1px 10px;
+  }
+  
+  .logo span {
+    color: var(--beige);
+  }
+
+  nav {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+  
+  nav ul li a {
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--beige);
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+    transform: 2s
+  }
+  
+  nav ul li a:hover::after,
+  nav ul li a.active::after {
+    width: 100%;
+  }
+  
+  nav .menu {
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 16px;
+
+    opacity: 0;
+    visibility: hidden;
+    top: 0vh;
+    right: -60vh;
+    transition: ease-in-out 2s 
+  }
+  
+  nav .menu ul {
+    display: none;
+  }
+
+  nav.show .menu{
+    opacity: 1;
+    visibility: visible;
+    width: 85vw;
+    height: 85vh;
+
+    background: var(--beige);
+    box-shadow: inset 11px -11px 40px 0px var(--light-beige);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+  }
+
+  nav.show .menu ul {
+    display: grid;
+  }
+
+  nav.show ul.grid {
+    gap: 4rem;
+  }
+
+  .toggle {
+    color: var(--dark);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .icon-menu:hover{
+    cursor: pointer;
+    text-shadow:  var(--beige) 2px 2px 10px;
+  }
+
+  .shop-cart-mobile{
+    color: var(--dark);
+    font-size: 1.5rem;
+    cursor: pointer;
+    justify-self: center;
+  }
+
+  .shop-cart-mobile:hover{
+    text-shadow:  var(--dark) 2px 2px 10px;
+  }
+
+  .shop-cart-desktop{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .modal-cart{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50vh
+  }
+
+  .show-cart .modal-cart{
+    visibility: visible;
+    opacity: 1;
+    width: 20rem;
+    height: 13rem;
+    background-color: var(--light-gray);
+    box-shadow: inset 0px 0px 13px -1px var(--light-beige);
+    border-radius: 1rem;
+    display: grid;
+    padding: 1rem;
+    top: 30vh;
+    right: 10vw;
+    transition: 0.5s;
+  }
+
+  .modal-img{
+    visibility: hidden;
+    opacity: 0;
+    height: 7rem;
+    width: 6rem;
+  }
+
+  .show-cart .modal-img{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-text{
+    visibility: hidden;
+    opacity: 0;
+    font-size: 14px;
+    font-family: var(--text-font);
+    justify-self: right;
+    float: right;
+  }
+
+  .show-cart .modal-text{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-button{
+    visibility: hidden;
+    opacity: 0;
+    width: 18rem;
+    height: 2rem;
+    justify-self: center;
+    align-self: flex-end;
+    border-radius: 10px;
+    background-color: var(--light-beige);
+    border: solid 1px var(--light);
+  }
+
+  .show-cart .modal-button{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  nav .icon-close {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 1.5rem;
+    transition: 5 s;
+  }
+  
+  nav.show .icon-close {
+    visibility: visible;
+    opacity: 1;
+    right: 1.5rem;
+
+  }
+
+  .nav-item:hover{
+    text-shadow: var(--dark) 2px 2px 10px;
+  }
+  
+  .underline-hover:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .underline-hover:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    box-shadow: 0 0 10px 1px var(--dark);
+  }
+
+  .hide{
+    display: none;
+    visibility: hidden;
+  }
+
+  .pulse-box{
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation-name: pulseBox;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    border: 0px;
+  }
+  
+  
+  @keyframes pulseBox {
+    0% {box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.6);}
+    100% {box-shadow: 0px 0px 18px 0px rgb(253, 253, 253);}
+  }
+
+  @media (min-width:992px) {
+    .icon-menu{
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    nav .menu {
+      opacity: 1;
+      visibility: visible;
+      display: block;
+    }
+
+    nav .menu ul {
+      display: flex;
+    }
+
+    .nav-item:hover{
+      text-shadow: var(--beige) 1px 1px 10px;
+    }
+
+    .underline-hover:after{
+      background-color: var(--beige);
+    }
+    
+    .underline-hover:hover:after{
+      box-shadow: 0 0 10px 1px var(--beige);
+    }
+
+    .shop-cart-desktop{
+      visibility: visible;
+      opacity: 1;
+      color: var(--dark);
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: absolute;
+      right: 10vh;
+    }
+
+    .shop-cart-desktop:hover{
+      text-shadow:  var(--beige) 2px 2px 10px;
+    }
+
+    .shop-cart-mobile{
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .modal-cart{
+      top: 5vh;
+    }
+
+    .show-cart .modal-cart{
+      top: 8vh;
+      right: 1vw;
+    }
+    
+  }
