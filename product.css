@@ -1,0 +1,106 @@
+.product{
+    width: auto;
+    height: 27rem;
+    margin: 1rem 0;
+    
+    /* overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; */
+}
+
+.content{
+    display: flex;
+    position: absolute;
+    left: -129vw;
+
+    transition: 2s;
+}
+
+.product-box{
+    margin: 1rem 2rem;
+    display: grid;
+    justify-items: center;
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.205);
+    box-shadow: 0 8px 32px 0 rgba(116, 116, 116, 0.37);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all ease 1s;
+}
+
+.product-box:hover{
+    transform: scale(1.1);
+}
+
+.product-box img {
+    width: 18rem;
+    height: 22rem;
+}
+
+.product-box h3{
+    font-family: var(--title-font);
+}
+
+.scroll-left {
+    position: absolute;
+    left: 0;
+    width: 5rem;
+    height: 26rem;
+    display: grid;
+    align-content: center;
+    justify-content: left;
+    cursor: pointer;
+
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    box-shadow: inset 10px 0px 30px 0px rgba(255, 255, 255, 0.25);
+}
+
+.scroll-right {
+    position: absolute;
+    right: 0;
+    width: 5rem;
+    height: 26rem;
+    display: grid;
+    align-content: center;
+    justify-content: right;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    cursor: pointer;
+
+    box-shadow: inset -10px 0px 30px 0px rgba(255, 255, 255, 0.25);
+}
+
+.scroll-left:hover{
+    box-shadow: inset -10px 0px 30px 0px rgba(255, 255, 255, 0.8)
+} 
+
+.scroll-left:hover i{
+    transform: scale(1.2);
+} 
+
+.scroll-right:hover{
+box-shadow: inset -10px 0px 30px 0px rgba(255, 255, 255, 0.8)}
+
+.scroll-right:hover i{
+    transform: scale(1.2);
+} 
+
+.scroll-left i, .scroll-right i {
+    color: var(--light);
+    margin: 0 0.5rem;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+ 
+
+@media (min-width:992px) {
+    .content{
+        left: -15vw;
+    }
+}

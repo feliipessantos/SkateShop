@@ -55,7 +55,7 @@
     visibility: hidden;
     top: 0vh;
     right: -60vh;
-    transition: ease-in-out 2s 
+    transition: all linear 1s 
   }
   
   nav .menu ul {
@@ -187,14 +187,13 @@
     opacity: 0;
     position: absolute;
     top: 1.5rem;
-    transition: 5 s;
   }
   
   nav.show .icon-close {
     visibility: visible;
     opacity: 1;
     right: 1.5rem;
-
+    transition: all linear 2s 
   }
 
   .nav-item:hover{

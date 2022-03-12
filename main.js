@@ -37,7 +37,7 @@ for (const e of buttonBuy) {
   })
 }
 
-// SLIDER
+//SLIDER
 let count = 1
 document.querySelector('#radio1').checked = true
 
@@ -52,4 +52,31 @@ function nextImage(){
 
 setInterval(function(){
   nextImage();
-}, 5000)
+}, 10000)
+
+//SCROLL PRODUCT
+const left = document.querySelectorAll(".scroll-left")
+const right = document.querySelectorAll(".scroll-right")
+const container = document.querySelector(".product")
+const content = document.querySelector(".content")
+
+
+for (const e of left){
+  e.addEventListener("mousemove", function(){
+    if (window.innerWidth >= 922){
+      content.style.left = "5vw"
+    } else {
+      content.style.left = "13vw"
+    }
+  })
+}
+
+for (const e of right){
+  e.addEventListener("mousemove", function(){
+    if (window.innerWidth >= 922){
+      content.style.left = "-35vw"
+    } else {
+      content.style.left = "-270vw"
+    }
+  })
+}
