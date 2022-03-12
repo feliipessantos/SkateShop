@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Exo+2:wght@300;400;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="slider.css" />
+
 
     <title>SkateShop</title>
 </head>
@@ -41,8 +43,53 @@
                     <i class="fa-solid fa-bars toggle icon-menu"></i>
                     <i class="fa-solid fa-xmark toggle icon-close"></i>
                 </nav>
-            
-        </header>
+            </header>
+            <section class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <div class="slide selected-slide">
+                        <img src="./assets/header-1.jpg" alt="header 1" class="img">
+                        <div class="slide-text1">
+                            <h2>Lorem ipsum, dolor sit amet a eius?</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis maxime unde veritatis libero omnis velit neque perspiciatis explicabo vel, 
+                                in iste ex odit asperiores sit accusantium quod sequi ipsum! Quo.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/header-2.jpg" alt="header 2" class="img">
+                        <div class="slide-text2">
+                            <h2>Lorem ipsum, dolor sit amet a eius?</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis maxime unde veritatis libero omnis velit neque perspiciatis explicabo vel, 
+                                in iste ex odit asperiores sit accusantium quod sequi ipsum! Quo.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/header-3.jpg" alt="header 3" class="img">
+                        <div class="slide-text3">
+                            <h2>Lorem ipsum, dolor sit amet a eius?</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis maxime unde veritatis libero omnis velit neque perspiciatis explicabo vel, 
+                                in iste ex odit asperiores sit accusantium quod sequi ipsum! Quo.</p>
+                        </div>
+                    </div>
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+                <div class="manual-nav">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <!-- <i class="fa-solid fa-circle-left btn-nav-left"></i>
+                <i class="fa-solid fa-circle-right btn-nav-right"></i> -->
+            </section>
         <script src="main.js"></script>
         <script src="https://kit.fontawesome.com/4954d8a005.js" crossorigin="anonymous"></script>
 

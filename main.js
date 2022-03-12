@@ -1,3 +1,5 @@
+// HEADER NAV + SHOP CART 
+
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 for (const element of toggle) {
@@ -34,3 +36,20 @@ for (const e of buttonBuy) {
     nav.classList.remove('show-cart')
   })
 }
+
+// SLIDER
+let count = 1
+document.querySelector('#radio1').checked = true
+
+function nextImage(){
+  count++
+  if(count>3){
+    count = 1
+  }
+
+  document.querySelector('#radio' + count).checked = true
+}
+
+setInterval(function(){
+  nextImage();
+}, 5000)
