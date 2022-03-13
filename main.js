@@ -38,21 +38,21 @@ for (const e of buttonBuy) {
 }
 
 //SLIDER
-let count = 1
-document.querySelector('#radio1').checked = true
+// let count = 1
+// document.querySelector('#radio1').checked = true
 
-function nextImage(){
-  count++
-  if(count>3){
-    count = 1
-  }
+// function nextImage(){
+//   count++
+//   if(count>3){
+//     count = 1
+//   }
 
-  document.querySelector('#radio' + count).checked = true
-}
+//   document.querySelector('#radio' + count).checked = true
+// }
 
-setInterval(function(){
-  nextImage();
-}, 10000)
+// setInterval(function(){
+//   nextImage();
+// }, 10000)
 
 //SCROLL PRODUCT
 const left = document.querySelectorAll(".scroll-left")
