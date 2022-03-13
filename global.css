@@ -14,6 +14,10 @@
     --title-font: 'Nunito', sans-serif;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body{
     background-color: var(--beige);
     overflow-x: hidden;
@@ -62,19 +66,31 @@
     visibility: hidden;
   }
 
+  .divider{
+    margin: auto;
+    height: min-content;
+    width: 95%;
+    border-bottom: 2px solid var(--orange);
+    box-shadow: 1px 1px 15px 1px var(--orange);
+  }
+
   .pulse-box{
-    border-top-left-radius: 1px;
-    border-bottom-left-radius: 1px;
-    animation-name: pulseBox;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    border: 0px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5); 
+    animation: pulse 2s infinite;
+    border-radius: 10px;
   }
   
-  
-  @keyframes pulseBox {
-    0% {box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.6);}
-    100% {box-shadow: 0px 0px 18px 0px rgb(253, 253, 253);}
-  }
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+

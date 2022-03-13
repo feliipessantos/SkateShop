@@ -1,13 +1,17 @@
 .about{
-    width: 100%;
-    height: 30rem;
+    width: max-content;
+    height: 33rem;
     display: flex;
     justify-content: center;
     margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--light-beige);
+    box-shadow: 1px 1px 5px 1px var(--light-gray);
 }
 
 .about-conteiner{
     padding: 0 2rem;
+    box-shadow: 5px 5px 5px 0 var(--light-gray);
 }
 
 .about-conteiner h2{
@@ -15,6 +19,7 @@
     font-family: var(--title-font);
     text-align: center;
     width: 20rem;
+    text-shadow: 2px 2px 5px var(--light-gray);
 }
 
 .about-conteiner p {
@@ -22,13 +27,30 @@
     font-family: var(--text-font);
     text-align: justify;
     width: 20rem;
+    margin-top: -2rem;
+    text-shadow: 2px 2px 15px var(--light-gray);
+}
+
+.line{
+    height: min-content;
+    width: 15rem;
+    border-bottom: 1px solid var(--light-gray);
+    margin: -1rem 2.5rem;
+    box-shadow: 1px 1px 15px 1px var(--light-gray);
 }
 
 .about img{
     display: none;
+    box-shadow: 1px 1px 5px 1px var(--light-gray);
 }
 
 @media (min-width:992px) {
+
+    .about-conteiner{
+        margin-right: -3rem;
+        box-shadow: 5px 5px 5px 0 var(--light-gray);
+
+    }
     
     .about img{
         display: block;
