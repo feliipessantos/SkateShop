@@ -80,3 +80,27 @@ for (const e of right){
     }
   })
 }
+
+// back to top button
+
+const backToTopButton = document.querySelector('.back-to-top')
+function backToTop() {
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+backToTopButton.addEventListener('click', function () {
+  topFunction()
+})
+
+window.addEventListener('scroll', function () {
+  backToTop()
+})
