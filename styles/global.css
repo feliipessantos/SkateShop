@@ -44,7 +44,7 @@
 
   }
 
-  .logo:hover{
+  .logo:hover, .logo span:hover{
     text-shadow: var(--beige) 1px 1px 10px;
   }
   
@@ -55,10 +55,6 @@
     -1px 1px 0 var(--dark),
     1px -1px 0 var(--dark),
     -1px -1px 0 var(--dark);
-  }
-
-  .logo span:hover{
-    text-shadow: var(--beige) 1px 1px 10px;
   }
 
   .hide{

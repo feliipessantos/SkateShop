@@ -1,0 +1,80 @@
+
+.paralax-1{
+    
+    background-image: url("../../assets/lukas-bato-Vbbn4xNBfnM-unsplash.jpg");
+
+
+    height: 700px; 
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paralax-1 h1{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+
+    background: rgba(255, 255, 255, 0.527);
+    box-shadow: 0 8px 32px 0 rgba(116, 116, 116, 0.37);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.644);
+    border-radius: 12px;
+
+    padding: 1rem;
+    font-family: var(--logo-font);
+}
+
+h1 span{
+    color: var(--beige);
+    text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+}
+
+.text-container{
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+
+    background-color: var(--dark);
+}
+
+.text-container p {
+    border: solid 3px var(--orange);
+    border-radius: 12px;
+    padding: 1rem;
+    color: var(--beige);
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+.paralax-2{
+    
+    background-image: url("../../assets/tom-morbey-5jyEONpv0qA-unsplash.jpg");
+
+
+    height: 400px; 
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width:992px) {
+    .paralax-1 h1{
+        left: 45%;
+    }
+
+    .paralax-2{
+        height: 600px;
+    }
+}
