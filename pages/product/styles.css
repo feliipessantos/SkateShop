@@ -1,0 +1,121 @@
+.product-selected {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    justify-content: center;
+}
+
+.img-container{
+    width: 25rem;
+    height: 35rem;
+
+    margin-top: 5rem;
+    background: var(--light);
+    box-shadow: 0 0 5px 2px var(--light-gray);
+}
+
+.product-selected img {
+    width: 400px;
+    height: 500px;
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1rem;
+    margin-top: -.5rem;
+}
+
+.product-name, .product-price{
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-gray);
+
+    border: solid 2px var(--orange);
+    box-shadow: 0 0 5px 1px var(--orange);
+    border-radius: 12px;
+
+    font-family: var(--title-font);
+    color: var(--orange);
+}
+
+.product-price{
+    width: 5rem;
+
+    background-color: var(--dark-yellow);
+    border: solid 2px var(--dark);
+    box-shadow: none;
+    color: var(--dark);
+
+    font-weight: bolder;
+}
+
+.shop-cart-product{
+    color: var(--dark);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.product-info{
+    width: 25rem;
+    height: 35rem;
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
+
+    margin: 2rem 0;
+    background: var(--light-gray);
+    box-shadow: 0 0 5px 2px var(--orange);
+}
+
+.product-info .line{
+    border-bottom: 1px solid var(--orange);
+    margin: 0 2.5rem;
+    box-shadow: 1px 1px 15px 1px var(--orange);
+}
+
+.product-info h1{
+    font-family: var(--title-font);
+}
+
+.product-info h3, .product-info p {
+    font-family: var(--text-font);
+    text-align: justify;
+}
+
+.content{
+    background-color: var(--dark-gray);
+}
+
+@media (min-width:992px) {
+    .product-selected{
+        display: flex;
+    }
+
+    .img-container{
+        width: 30rem;
+        height: 38rem;
+
+        display: grid;
+        justify-content: center;
+    }
+
+    .product-info{
+        width: 30rem;
+        height: 38rem;
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+
+    .shop-cart-product{
+        margin-left: 3rem;
+    }
+}
+

@@ -14,8 +14,6 @@
 
 .product-box{
     margin: 1rem 2rem;
-    display: grid;
-    justify-items: center;
     cursor: pointer;
 
     background: rgba(255, 255, 255, 0.205);
@@ -25,6 +23,11 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: all ease 1s;
+}
+
+.product-box a {
+    display: grid;
+    justify-items: center;
 }
 
 .product-box:hover{
