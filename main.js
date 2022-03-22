@@ -54,32 +54,6 @@ for (const e of buttonBuy) {
 //   nextImage();
 // }, 10000)
 
-//SCROLL PRODUCT
-const left = document.querySelectorAll(".scroll-left")
-const right = document.querySelectorAll(".scroll-right")
-const container = document.querySelector(".product")
-const content = document.querySelector(".content")
-
-
-for (const e of left){
-  e.addEventListener("mousemove", function(){
-    if (window.innerWidth >= 922){
-      content.style.left = "5vw"
-    } else {
-      content.style.left = "13vw"
-    }
-  })
-}
-
-for (const e of right){
-  e.addEventListener("mousemove", function(){
-    if (window.innerWidth >= 922){
-      content.style.left = "-35vw"
-    } else {
-      content.style.left = "-270vw"
-    }
-  })
-}
 
 // back to top button
 
@@ -104,3 +78,25 @@ backToTopButton.addEventListener('click', function () {
 window.addEventListener('scroll', function () {
   backToTop()
 })
+
+//SWIPPER
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-next-mobile",
+    prevEl: ".swiper-prev-mobile",
+  },
+  breakpoints: {
+    922: {
+      slidesPerView: 3,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-next-desktop",
+        prevEl: ".swiper-prev-desktop",
+      },
+    }
+  }
+});
