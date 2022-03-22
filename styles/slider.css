@@ -1,98 +1,36 @@
 .slider{
     width: 100%;
     height: 500px;
-    overflow: hidden;
     margin: 0 auto;
     border-bottom: 2px solid var(--orange);
 }
 
-.slides{
-    width: 400%;
-    height: 500px;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
 .slide{
-    width: 25%;
-    position: relative;
-    transition: all linear 2s 
+    display: flex;
 }
 
 .slide img {
+    display: block;
     width: 100%;
     height: 500px;
 }
 
-.manual-nav{
-    position: absolute;
-    width: 100%;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid var(--light);
-    padding: 5px;
-    border-radius: 10px;
+.swiper-slider-prev-mobile{
     cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background-color: var(--light);
-}
-
-#radio1:checked ~ .selected-slide{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .selected-slide{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .selected-slide{
-    margin-left: -50%;
-}
-
-.nav-auto div{
-    border: 2px solid var(--dark);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.nav-auto{
+    font-size: 1.5rem;
     position: absolute;
-    width: 100%;
-    margin-top: 460px;
-    display: flex;
-    justify-content: center;
+    left: 0;
+    top:50%;
+    color: var(--light);
 }
 
-.nav-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .nav-auto .auto-btn1{
-    background-color: var(--light);
-}
-
-#radio2:checked ~ .nav-auto .auto-btn2{
-    background-color: var(--light);
-}
-
-#radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: var(--light);
+.swiper-slider-next-mobile{
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top:50%;
+    color: var(--light);
 }
 
 .slide-text1{
@@ -145,7 +83,7 @@
     height: 5rem;
     padding: 0.5rem;
     top: 35vh;
-    left: 25vw;
+    left: 20vw;
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 20px );
@@ -161,12 +99,16 @@
 }
 
 @media (min-width:992px) {
+    .slider, .slide img{
+        height: 650px;
+    }
+
     .slide-text1{
-    width: 20rem;
-    height: fit-content;
-    padding: 1rem;
-    top: 25vh;
-    right: 5vw;
+        width: 20rem;
+        height: fit-content;
+        padding: 1rem;
+        top: 25vh;
+        right: 5vw;
     }
 
     .slider p{
@@ -176,19 +118,19 @@
     }
 
     .slide-text2{
-    width: 20rem;
-    height: fit-content;
-    padding: 1rem;
-    top: 30vh;
-    left: 5vw;
+        width: 20rem;
+        height: fit-content;
+        padding: 1rem;
+        top: 30vh;
+        left: 5vw;
     }
 
     .slide-text3{
-    width: 20rem;
-    height: fit-content;
-    padding: 1rem;
-    top: 25vh;
-    left: 39vw;
+        width: 20rem;
+        height: fit-content;
+        padding: 1rem;
+        top: 25vh;
+        left: 40vw;
     }
 
     .slide-text3 p {

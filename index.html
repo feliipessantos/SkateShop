@@ -52,12 +52,9 @@
                 </nav>
         </header>
         <main>
-            <section class="slider">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <div class="slide selected-slide">
+            <section class="swiper slider mySlider">
+                <div class="swiper-wrapper">
+                    <div class="slide swiper-slide">
                         <img src="./assets/header-1.jpg" alt="header 1" class="img">
                         <div class="slide-text1">
                             <h2>Lorem ipsum, dolor sit amet a eius?</h2>
@@ -65,8 +62,14 @@
                                 Quis maxime unde veritatis libero omnis velit neque perspiciatis explicabo vel, 
                                 in iste ex odit asperiores sit accusantium quod sequi ipsum! Quo.</p>
                         </div>
+                        <div class="swiper-slider-next-mobile">
+                            <i class="fa-solid fa-chevron-right arrow-next"></i>
+                        </div>
+                        <div class="swiper-slider-prev-mobile">
+                            <i class="fa-solid fa-chevron-left arrow-prev"></i>
+                        </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide swiper-slide">
                         <img src="./assets/header-2.jpg" alt="header 2" class="img">
                         <div class="slide-text2">
                             <h2>Lorem ipsum, dolor sit amet a eius?</h2>
@@ -74,8 +77,14 @@
                                 Quis maxime unde veritatis libero omnis velit neque perspiciatis explicabo vel, 
                                 in iste ex odit asperiores sit accusantium quod sequi ipsum! Quo.</p>
                             </div>
+                            <div class="swiper-slider-next-mobile">
+                                <i class="fa-solid fa-chevron-right arrow-next"></i>
+                            </div>
+                            <div class="swiper-slider-prev-mobile">
+                                <i class="fa-solid fa-chevron-left arrow-prev"></i>
+                            </div>
                         </div>
-                    <div class="slide">
+                    <div class="slide swiper-slide">
                         <img src="./assets/header-3.jpg" alt="header 3" class="img">
                         <div class="slide-text3">
                             <h2>Lorem ipsum, dolor sit amet a eius?</h2>
@@ -83,79 +92,74 @@
                                 Quis maxime unde veritatis libero omnis velit neque perspiciatis explicabo vel, 
                                 in iste ex odit asperiores sit accusantium quod sequi ipsum! Quo.</p>
                         </div>
-                    </div>
-                    <div class="nav-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
+                        <div class="swiper-slider-next-mobile">
+                            <i class="fa-solid fa-chevron-right arrow-next"></i>
+                        </div>
+                        <div class="swiper-slider-prev-mobile">
+                            <i class="fa-solid fa-chevron-left arrow-prev"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="manual-nav">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
-                <!-- <i class="fa-solid fa-circle-left btn-nav-left"></i>
-                <i class="fa-solid fa-circle-right btn-nav-right"></i> -->
+                <div class="swiper-pagination"></div>
             </section>
-            <section class="swipper mySwiper">
+            <section class="swipper slider-product mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide product">
                         <a href="./pages/product/product1.html">
                         <img src="../../assets/product-1.png" alt="Product" class="product-img">
                         <h3>Shape Santa Cruz</h3>
-                        <div class="swiper-next-mobile">
+                        <div class="swiper-prev-mobile">
                             <i class="fa-solid fa-circle-arrow-left arrow-prev"></i>
                         </div>
-                        <div class="swiper-prev-mobile">
+                        <div class="swiper-next-mobile">
                             <i class="fa-solid fa-circle-arrow-right arrow-next"></i>
                         </div>
                     </div>
                     </a>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide product">
                         <a href="./pages/product/product2.html">
                             <img src="../../assets/product-2.png" alt="Product" class="product-img">
                             <h3>Shape Santa Cruz</h3>
-                            <div class="swiper-next-mobile">
+                            <div class="swiper-prev-mobile">
                                 <i class="fa-solid fa-circle-arrow-left arrow-prev"></i>
                             </div>
-                            <div class="swiper-prev-mobile">
+                            <div class="swiper-next-mobile">
                                 <i class="fa-solid fa-circle-arrow-right arrow-next"></i>
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide product">
                         <a href="./pages/product/product3.html">
                             <img src="../../assets/product-3.png" alt="Product" class="product-img">
                             <h3>Shape Santa Cruz</h3>
-                            <div class="swiper-next-mobile">
+                            <div class="swiper-prev-mobile">
                                 <i class="fa-solid fa-circle-arrow-left arrow-prev"></i>
                             </div>
-                            <div class="swiper-prev-mobile">
+                            <div class="swiper-next-mobile">
                                 <i class="fa-solid fa-circle-arrow-right arrow-next"></i>
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide product">
                         <a href="./pages/product/product4.html">
                             <img src="../../assets/product-4.png" alt="Product" class="product-img">
                             <h3>Shape Santa Cruz</h3>
-                            <div class="swiper-next-mobile">
+                            <div class="swiper-prev-mobile">
                                 <i class="fa-solid fa-circle-arrow-left arrow-prev"></i>
                             </div>
-                            <div class="swiper-prev-mobile">
+                            <div class="swiper-next-mobile">
                                 <i class="fa-solid fa-circle-arrow-right arrow-next"></i>
                             </div>
                         </a>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide product">
                         <a href="./pages/product/product5.html">
                             <img src="../../assets/product-5.png" alt="Product" class="product-img">
                             <h3>Shape Santa Cruz</h3>
-                            <div class="swiper-next-mobile">
+                            <div class="swiper-prev-mobile">
                                 <i class="fa-solid fa-circle-arrow-left arrow-prev"></i>
                             </div>
-                            <div class="swiper-prev-mobile">
+                            <div class="swiper-next-mobile">
                                 <i class="fa-solid fa-circle-arrow-right arrow-next"></i>
                             </div>
                         </a>

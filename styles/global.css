@@ -8,6 +8,7 @@
     --beige: #D9C5B2;
     --light-beige: #FEE1C7;
     --light: #F3F3F4;
+    --swiper-theme-color:#F3F3F4;
 
     --logo-font: 'Alfa Slab One', cursive;
     --text-font: 'Exo 2', sans-serif;
@@ -63,7 +64,7 @@
   }
 
   .divider{
-    margin: auto;
+    margin: 3rem auto;
     height: min-content;
     width: 95%;
     border-bottom: 2px solid var(--orange);

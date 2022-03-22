@@ -37,24 +37,6 @@ for (const e of buttonBuy) {
   })
 }
 
-//SLIDER
-// let count = 1
-// document.querySelector('#radio1').checked = true
-
-// function nextImage(){
-//   count++
-//   if(count>3){
-//     count = 1
-//   }
-
-//   document.querySelector('#radio' + count).checked = true
-// }
-
-// setInterval(function(){
-//   nextImage();
-// }, 10000)
-
-
 // back to top button
 
 const backToTopButton = document.querySelector('.back-to-top')
@@ -85,6 +67,7 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+  grabCursor: true,
   navigation: {
     nextEl: ".swiper-next-mobile",
     prevEl: ".swiper-prev-mobile",
@@ -98,5 +81,34 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-prev-desktop",
       },
     }
+  }
+});
+
+var slider = new Swiper(".mySlider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-slider-next-mobile",
+    prevEl: ".swiper-slider-prev-mobile",
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  effect: 'creative',
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
   }
 });
