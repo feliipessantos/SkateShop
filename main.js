@@ -112,3 +112,29 @@ var slider = new Swiper(".mySlider", {
     },
   }
 });
+
+//SCROLLREVEAL
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `.about, .img-container, .product-info`,
+  { interval: 100 }
+)
+
+const sr = ScrollReveal({
+  origin: 'bottom',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+sr.reveal(
+  `.swiper-wrapper, footer, .text-container, .video`,
+  { interval: 100 }
+)
