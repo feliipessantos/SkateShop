@@ -70,6 +70,10 @@ h1 span{
     background-size: contain;
 }
 
+.video iframe{
+    margin-top: 2rem;
+}
+
 @media (min-width:992px) {
     .paralax-1 h1{
         left: 42%;
@@ -91,6 +95,17 @@ h1 span{
     .video iframe{
         width: 800px;
         height: 400px;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width:1450px){
+    .paralax-1{
+        height: 900px; 
+    }
+
+    .paralax-1 h1{
+        left: 45%;
     }
 }
 

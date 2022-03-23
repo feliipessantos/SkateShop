@@ -9,7 +9,7 @@
     width: 25rem;
     height: 35rem;
 
-    margin-top: 5rem;
+    margin-top: 6rem;
     background: var(--light);
     box-shadow: 0 0 5px 2px var(--light-gray);
 }
@@ -25,7 +25,7 @@
     align-items: center;
 
     padding: 0 1rem;
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
 }
 
 .product-name, .product-price{
@@ -110,12 +110,16 @@
     .product-info{
         width: 30rem;
         height: 38rem;
-        margin-top: 5rem;
+        margin-top: 6rem;
         margin-left: 2rem;
     }
 
     .shop-cart-product{
         margin-left: 3rem;
+    }
+
+    .product-page{
+        top: 84%;
     }
 }
 

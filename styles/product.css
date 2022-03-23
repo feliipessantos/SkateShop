@@ -1,6 +1,5 @@
 .slider-product{
     width: auto;
-    height: 24rem;
 }
 .product {
     text-align: center;
@@ -18,7 +17,6 @@
     align-items: center;
     cursor: pointer;
     margin: 1rem 0;
-
 }
 
 .product a {
@@ -33,7 +31,7 @@
 
 .swiper-prev-mobile, .swiper-next-mobile {
     width: 5rem;
-    height: 24rem;
+    height: 23.6rem;
     cursor: pointer;
     display: grid;
     position: absolute;
@@ -42,14 +40,14 @@
 
 .swiper-prev-mobile{
     left: 0;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
 .swiper-next-mobile{
     right: 0;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 
 .swiper-next-mobile:hover{
@@ -94,7 +92,7 @@
 
     .swiper-next-desktop, .swiper-prev-desktop{
         width: 5rem;
-        height: 24rem;
+        height: 23.7rem;
         cursor: pointer;
         display: grid;
         position: absolute;

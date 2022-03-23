@@ -6,6 +6,8 @@ footer{
     box-shadow: inset 0px 0px 13px -1px var(--dark-gray-shadow);
     background-color: var(--dark-gray);
     border-top: 2px solid var(--orange);
+
+    margin-top: 2rem;
 }
 
 .brand{

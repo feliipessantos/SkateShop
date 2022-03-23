@@ -77,8 +77,8 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       loop: true,
       navigation: {
-        nextEl: ".swiper-next-desktop",
-        prevEl: ".swiper-prev-desktop",
+        prevEl: ".swiper-next-desktop",
+        nextEl: ".swiper-prev-desktop",
       },
     }
   }
