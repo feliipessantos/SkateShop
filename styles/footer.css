@@ -110,10 +110,6 @@ footer iframe{
         cursor: pointer;
     }
 
-    .newsletter input:focus{
-        outline: none;
-    }
-
     .newsletter input:invalid{
         border: solid 2px rgb(255, 0, 0);
     }

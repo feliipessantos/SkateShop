@@ -1,0 +1,160 @@
+.form-container{
+    width: 28rem;
+    height: 35rem;
+    margin: 5rem auto 0 auto;
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container img {
+    display: none;
+}
+
+form {
+    width: 27rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+form h1 {
+    color: var(--light-beige);
+    width: 8rem;
+    height: 2rem;
+    margin: auto;
+    font-family: var(--title-font);
+}
+
+fieldset {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-color: var(--orange);
+    color: var(--light-beige);
+    font-family: var(--text-font);
+
+    display: grid;
+    grid-gap: .5rem;
+    grid-template:
+    'lbName lbName'
+    'name name'
+    'lbEmail lbPhone'
+    'email phone'
+    'lbCountry lbRange'
+    'country range'
+    'lbMesage number'
+    'mesage mesage'
+    'news news'
+    'submit submit';
+
+}
+
+input:invalid{
+    border: solid 1px rgb(255, 0, 0);
+}
+
+.lb-name{
+    grid-area: lbName;
+}
+
+#name{
+    grid-area: name;
+}
+
+.lb-email{
+    grid-area: lbEmail;
+}
+
+#email{
+    grid-area: email;
+}
+
+.lb-phone{
+    grid-area: lbPhone;
+}
+
+#phone{
+    grid-area: phone;
+}
+
+.lb-country{
+    grid-area: lbCountry;
+}
+
+#country {
+    grid-area: country;
+}
+
+.lb-range{
+    grid-area: lbRange;
+}
+
+#range{
+    grid-area: range;
+
+}
+
+.lb-mesage{
+    grid-area: lbMesage;
+}
+
+.number{
+    grid-area: number;
+ 
+    display: flex;
+    justify-content: space-between;
+    margin-top: -.5rem;
+}
+
+#mesage{
+    grid-area: mesage;
+
+    height: 180px;
+    max-height: 180px;
+    max-width: 23rem;
+}
+
+.news-container{
+    grid-area: news;
+    font-size: 14px;
+}
+
+.news-container label{
+    margin-left: .5rem;
+}
+
+#submit-input{
+    grid-area: submit;
+
+    background-color: var(--orange);
+    border: solid 1px var(--light-beige);
+    border-radius: 8px;
+    color: var(--light-beige);
+    height: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#submit-input:hover{
+    filter: brightness(50%);
+}
+
+@media (min-width:992px){
+    .form-container{
+        width: 60rem;
+        height: 40rem;
+    }
+    
+    .form-container img {
+        display: block;
+        width: 30rem;
+        height: 40rem;
+    }
+    
+    form {
+        width: 30rem;
+    }
+
+    #mesage{
+        max-width: 26rem;
+    }
+}
