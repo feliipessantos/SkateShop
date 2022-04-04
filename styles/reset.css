@@ -21,6 +21,11 @@ html {
   scroll-behavior: smooth;
 }
 
+textarea{
+  border: none;
+  outline: none;
+}
+
 input:focus{
   outline: none;
 }

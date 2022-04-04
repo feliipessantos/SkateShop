@@ -129,11 +129,12 @@
     opacity: 1;
     width: 20rem;
     height: 13rem;
-    background-color: var(--light-gray);
+    background-color: var(--orange);
     box-shadow: inset 0px 0px 13px -1px var(--light-beige);
     border-radius: 1rem;
     display: grid;
-    padding: 1rem;
+    align-items: center;
+    padding: .5rem;
     top: 30vh;
     right: 10vw;
     transition: 0.5s;
@@ -142,8 +143,10 @@
   .modal-img{
     visibility: hidden;
     opacity: 0;
-    height: 7rem;
-    width: 6rem;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: inset 0 8px 32px 0 rgba(133, 133, 133, 0.37);
+    height: 9rem;
+    width: 7rem;
   }
 
   .show-cart .modal-img{
@@ -154,10 +157,11 @@
   .modal-text{
     visibility: hidden;
     opacity: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-family: var(--text-font);
-    justify-self: right;
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .show-cart .modal-text{

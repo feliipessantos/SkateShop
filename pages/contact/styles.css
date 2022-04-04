@@ -90,7 +90,7 @@ input:invalid{
 
 #range{
     grid-area: range;
-
+    accent-color :var(--light-beige);
 }
 
 .lb-mesage{
@@ -111,6 +111,7 @@ input:invalid{
     height: 180px;
     max-height: 180px;
     max-width: 23rem;
+    padding: .5rem;
 }
 
 .news-container{
@@ -136,6 +137,10 @@ input:invalid{
 
 #submit-input:hover{
     filter: brightness(50%);
+}
+
+input[type="radio"]:checked {
+    accent-color :var(--light-beige);
 }
 
 @media (min-width:992px){

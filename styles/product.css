@@ -101,14 +101,14 @@
     }
 
     .swiper-prev-desktop{
-        top: 74%;
+        top: 96%;
         right: 0;
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
     }
     
     .swiper-next-desktop{
-        top: 74%;
+        top: 96%;
         left: 0;
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
